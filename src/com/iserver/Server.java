@@ -1,6 +1,9 @@
 package com.iserver;
 
+import java.util.UUID;
 import java.util.logging.Logger;
+
+import com.iserver.entity.Player;
 
 public interface Server {
 
@@ -13,4 +16,8 @@ public interface Server {
 	public void startServer();
 	
 	public void shutDown();
+	
+	public Player getPlayer(UUID uuid);
+	
+	public Player getPlayer(String name);
 }

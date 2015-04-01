@@ -1,5 +1,8 @@
 package com.iserver;
 
+import com.iserver.command.CommandManager;
+import com.iserver.command.ConsoleCommandSender;
+
 public class IServer {
 
 	private static Server server = null;
@@ -17,5 +20,6 @@ public class IServer {
 	
 	public static void main(String[] args) {
 		System.out.println("The IServer loading the librairies... Please wait.");
+		CommandManager.getCommandManager().handleCommand(new ConsoleCommandSender(), "kick");
 	}
 }
