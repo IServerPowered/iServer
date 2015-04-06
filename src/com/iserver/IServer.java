@@ -20,6 +20,6 @@ public class IServer {
 	
 	public static void main(String[] args) {
 		System.out.println("The IServer loading the librairies... Please wait.");
-		CommandManager.getCommandManager().handleCommand(new ConsoleCommandSender(), "kick");
+		new CommandManager().handleCommand(new ConsoleCommandSender(), "kick");
 	}
 }

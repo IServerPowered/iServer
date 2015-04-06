@@ -11,7 +11,7 @@ public interface Entity {
 	
 	public Position getPosition();
 	
-	public void setPosition(Position pos);
+	public void teleport(Position pos);
 	
 	public World getWorld();
 }
